@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label>Nhập tên</label>
+    <input type="text" name="txt_name" value="">
+    <br>
+    <label>Nhập điểm</label>
+    <input type="text" name="txt_score" value="">
+    <input type="button" onclick="grade(txt_name.value,txt_score.value)" value="kiểm tra"></input>
+    </form>
+
+    <p><span id="kq"></span></p>
+    <script type="text/javascript">
+        function grade(name,score){
+            var stringgrade;
+            if(score>= 0 && score<=100){
+                if (score >90) {
+                    stringgrade="exelence";
+                } else if (score >80) {
+                    stringgrade="very good";
+                } else if (score >60){
+                    stringgrade="fair";
+                } else if (score >= 50){
+                    stringgrade="medium";
+                }else{
+                    stringgrade="Fail";
+                }
+            }else{
+                stringgrade="nhap tu 0 den 100";
+            }
+        document.getElementById('kq').innerHTML= name+" your grade is "+stringgrade;
+    } 
+    </script>
+</body>
+</html>
