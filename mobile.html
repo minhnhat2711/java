@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        width: 300px;
+    }
+    button{
+        border: none;
+        background-color: rgb(1, 219, 1);
+        color: white;
+        padding: 10px;
+    }
+</style>
+<body>
+        <form action="" name="frm">
+            <p>
+                <label for="">
+                    Name
+                    <input type="text" name="pname" id="pname">
+                </label>
+            </p>
+            <p>
+                <label for="myfile">Select a file:</label>
+                    <input type="file"  accept=".png, .jpg" id="files" name="files"><br><br>
+                <label for="">
+                    Price
+                    <input type="text" name="up" id="up">
+                </label>
+            </p>
+            <button type="button" onclick="add()"> add</button>
+           
+        </form>  
+        <div id="tbl">         </div> 
+
+            <script type="text/javascript">
+              function add(){
+                  var fileInput = document.getElementById("files");
+                  var f1 = fileInput.files[0];
+                  imageURL = URL.createObjectURL(f1);
+                  console.log (fileInput);
+                  var pname=frm.pname.value;
+                  var price=frm.up.value;
+                  var pic=frm.files.value;
+                  var row="<p></p>";
+                  row +='<p> <img src="' + imageURL +'"><td>';
+                  row+="<p>" + pname + "</p>";
+                  row+="<p>$" + price + "đ</p>";
+                  row +='<button>đặt mua</button>';
+                  document.getElementById("tbl").innerHTML += row;        
+                  console.log(row);
+                  }
+          </script>
+  
+</body>
+</html>
