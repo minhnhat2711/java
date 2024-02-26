@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="giaothong.css">
+</head>
+<body>
+    <div>
+        <button type="button" onclick="bred()">red</button>
+        <button type="button" onclick="byellow()">yellow</button>
+        <button type="button" onclick="bgreen()">green</button>
+    </div>
+    <div class="giaothong">
+        <div id="red" class="red"></div>
+        <div id="yellow" class="yellow"></div>
+        <div id="green" class="green"></div>
+    </div>
+    <script>
+        var dendo =  document.getElementById('red');
+        var denvang =  document.getElementById('yellow');
+        var denxanh =  document.getElementById('green');
+        function bred(){
+            dendo.style.backgroundColor = "rgb(255, 0, 0)";
+            denvang.style.backgroundColor = "rgba(255, 255, 0, 0.7)";
+            denxanh.style.backgroundColor = "rgba(0, 255, 0, 0.5)";
+        }
+        function byellow(){
+            denvang.style.backgroundColor = "rgb(255, 255, 0)";
+            dendo.style.backgroundColor = "rgba(255, 45, 45, 0.5)";
+            denxanh.style.backgroundColor = "rgba(0, 255, 0, 0.5)";
+        }
+        function bgreen(){
+            denxanh.style.backgroundColor = "rgb(0, 255, 0)";
+            denvang.style.backgroundColor = "rgba(255, 251, 0, 0.7)";
+            dendo.style.backgroundColor = "rgba(255, 45, 45, 0.5)";
+        }
+    </script>
+</body>
+</html>
