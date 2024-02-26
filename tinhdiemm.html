@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bang{
+        border: 1px solid red;
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        margin: auto;
+    }
+    h3{
+        color: blue;
+    }
+</style>
+<body>
+    <form class="bang">
+    <h3>Bảng điểm của em</h3>
+    <label>Semester 1:</label><br>
+    <input type="text" id="s1"><br>
+    <label>Semester 2:</label><br>
+    <input type="text" id="s2"><br>
+    <label>Year</label>
+    <select id="Year">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select><br>
+    <label>Summary</label><br>
+    <input type="text" id="sum" value=""><br>
+    <input type="button" value="OK" onclick="OK()">
+    <input type="button" value="Cancel" onclick="Cancel()">
+    </form>
+    
+    <script>
+        function OK(){
+            var a = parseInt(document.getElementById('s1').value);
+            var b = parseInt(document.getElementById('s2').value);
+            var y = document.getElementById('Year');
+            var value = y[y.selectedIndex].value;
+            var result;
+            if (value == 1){
+                result = ((a+(b*2))/3);
+            }else if(value == 2){
+                result = ((a+(b*3))/4);
+            }else if(value == 3){
+                result = ((a+(b*4))/5);
+            }
+            document.getElementById('sum').value=result;
+        }
+        function Cancel(){
+            document.getElementById('s1').value=" ";
+            document.getElementById('s2').value=" ";
+            document.getElementById('sum').value=" ";
+        }
+    </script>
+</body>
+</html>
