@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row{
+        display: flex;
+        padding: 20px;
+    }
+    .card{
+        border: 1px solid black;
+    }
+    h5{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .btn{
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(40, 60, 243);
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+</style>
+<body onload="productlists()">
+    <div class="container-fluid" style="margin-top: 20px;">
+        <H2>THỜI TRANG NAM</H2>
+        <div class="row" id="men">
+        </div>
+    </div>    
+    <div class="container-fluid" style="margin-top: 20px;">
+        <H2>THỜI TRANG NỮ</H2>
+        <div class="row" id="women">
+        </div>
+    </div>  
+</body>
+<script src="product.js"></script>
+</html>
