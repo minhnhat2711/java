@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+        background-color: #00ffff;
+    }
+    p{
+        margin-bottom: 0;
+        font-weight: 800;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        color: rgb(255, 0, 0);
+        padding: 10px;
+    }
+    .bg{
+        background-color: #5f9ea0;
+        width: 50%;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="bg">
+        <form action="#" name="frm">
+        <p>Fullname customer :</p>
+        <input type="text" id="name"> 
+        <p>Id pro :</p>
+        <input type="text" id="id">
+        <p>Name pro :</p>
+        <input type="text" id="prodname">
+        <p>Quantity pro :</p>
+        <input type="text"name="quantity" id="quantity">
+        <p>Price pro :</p>
+        <input type="text"name="price" id="price">
+        <br>
+        <button type="button" onclick="save()">save</button>
+        <button type="button" onclick="show()">show</button>
+        <button type="button" onclick="reset()">reset</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Auto_increment</th>
+                    <th>Fullname customer</th>
+                    <th>Id pro </th>
+                    <th>Name pro</th>
+                    <th>Quantity pro</th>
+                    <th>Price pro</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="tbl"></tbody>
+        </table>
+    </div>
+</body>
+<script src="/sv/custtomer.js"></script>
+</html>
