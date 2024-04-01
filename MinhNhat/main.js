@@ -5,6 +5,8 @@ const food = [
     image: "./img/haunuong.jpg",
     price: "280 $",
     quantity: "99",
+    detail: "<br> hàu : <br>  hàu lại là nguồn cung cấp nhiều dưỡng chất tốt cho sức khỏe, bao gồm protein, chất béo lành mạnh, vitamin và các khoáng chất thiết yếu."
+
   },
 
   {
@@ -13,6 +15,7 @@ const food = [
     image: "./img/thitbachi.jpg",
     price: "100 $",
     quantity: "99",
+    detail: "<br> thịt ba chỉ nướng : <br> Thịt ba chỉ nướng là một món ăn từ Việt Nam, được làm từ thịt lợn cắt thành từng lát mỏng, có lớp mỡ ở giữa. Thường thì thịt ba chỉ được ướp gia vị như muối, tiêu, tỏi và các loại gia vị khác, sau đó được nướng trên lửa than hoặc lò nướng cho đến khi thịt chín và có màu vàng đẹp."
   },
 
   {
@@ -21,6 +24,7 @@ const food = [
     image: "./img/trungopla.jpg",
     price: "5 $",
     quantity: "99",
+    detail: "<br> trứng ốp la : <br> Trứng ốp la là một món ăn phổ biến trong ẩm thực Việt Nam và nhiều nền văn hóa ẩm thực khác trên thế giới. Món này bao gồm trứng gà được rán hoặc chiên trong dầu mỡ cho đến khi lòng đỏ còn nguyên vẹn, còn lòng trắng đã đặc chắc."
   },
 
   
@@ -32,6 +36,7 @@ const drink = [
     image: "./img/tao.jpg",
     price: "20 $",
     quantity: "99",
+    detail: "<br> nước táo : <br> Nước táo là một loại nước ép được làm từ trái táo. Quá trình làm nước táo thường bắt đầu bằng việc lựa chọn táo tươi, rửa sạch và cắt thành miếng nhỏ. Sau đó, miếng táo được đưa vào máy ép hoặc máy xay để lấy nước."
   },
 
   {
@@ -40,6 +45,7 @@ const drink = [
     image: "./img/dua.jpg",
     price: "10 $",
     quantity: "99",
+    detail: "<br> nước dừa : <br> Nước dừa là nước được lấy từ trái dừa, một loại quả phổ biến trong nhiều khu vực nhiệt đới trên thế giới. Quá trình làm nước dừa thường bắt đầu bằng việc chọn lựa trái dừa non và tươi, sau đó mở trái dừa và lấy nước bên trong."
   },
 
   {
@@ -48,6 +54,7 @@ const drink = [
     image: "./img/trasua.jpg",
     price: "12 $",
     quantity: "99",
+    detail: "<br> trà sữa : <br> Trà sữa là một loại đồ uống phổ biến trong ẩm thực Đài Loan và đã lan rộng ra nhiều quốc gia trên thế giới. Đây là một sự kết hợp giữa trà và sữa, thường được phục vụ với đá và có thêm hương vị từ đường hoặc các loại siro, tùy thuộc vào khẩu vị cá nhân."
   },
 
 ];
